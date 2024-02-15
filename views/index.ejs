@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <% for (var i = 0; i < items.length; i++) {%>
+      <h2><%= JSON.stringify(items[i].snippet.title) %> </h2>
+      <h2><%= JSON.stringify(items[i].snippet.thumbnails.default.url) %></h2>
+      <h2><%= JSON.stringify(items[i].id.videoId) %> </h2>
+      <% } %> 
+  </body>
+</html>
